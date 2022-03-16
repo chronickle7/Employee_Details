@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Displaying Employee</title>
+</head>
+
+<body>
+    <h2>
+        Name: <%=employee.firstname%>
+            <%=employee.lastname%>
+    </h2>
+    <ul>
+        <li>
+            Mobile Number: <%=employee.mobilenumber%>
+        </li>
+        <li>
+            Employye ID : <%=employee.employeeid%>
+        </li>
+
+        <h3>Address</h3>
+        <ul>
+            <% employee.address.forEach(function(a){%>
+                <li>
+                    Street : <%=a.street%>
+                </li>
+                <li>
+                    City : <%=a.city%>
+                </li>
+                <li>
+                    State : <%=a.state%>
+                </li>
+                <li>
+                    Country : <%=a.country%>
+                </li>
+                <li>
+                    Pincode : <%=a.pincode%>
+                </li>
+                <% }) %>
+
+        </ul>
+    </ul>
+
+    <a href="/employees">Home Page</a>
+</body>
+
+</html>

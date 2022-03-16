@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Displaying employees</title>
+</head>
+
+<body>
+    <h2>List of Employees(click to find details of employees)</h2>
+    <% for(let e of employee) {%>
+
+        <a href="/employees/<%=e._id%>">
+            <%=e.firstname%>
+                <%=e.lastname%>
+        </a>
+        <br>
+        </ul>
+        <% } %>
+            <br>
+            <a href="/employees/new">Add a Employee</a>
+
+</body>
+
+</html>

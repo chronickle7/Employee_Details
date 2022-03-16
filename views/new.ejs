@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Employee</title>
+</head>
+
+<body>
+    <h1>Add Employee details</h1>
+    <form action="/employees" method="POST">
+        <div class="row">
+            <div class="col-6 offset-3">
+                <div>
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="firstname" name="firstname">
+                </div>
+                <br>
+                <div>
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" id="lastname" name="lastname">
+                </div>
+                <br>
+                <div>
+                    <label for="mobile">Mobile Number:</label>
+                    <input type="number" id="mobile" name="mobile">
+                </div>
+                <br>
+                <h2>Add Address</h2>
+                <div>
+                    <label for="street">Street Number:</label>
+                    <input type="text" id="street" name="street">
+                </div>
+                <br>
+                <div>
+                    <label for="city">City Name:</label>
+                    <input type="text" id="city" name="city">
+                </div>
+                <br>
+                <div>
+                    <label for="state">State:</label>
+                    <input type="text" id="state" name="state">
+                </div>
+                <br>
+                <div>
+                    <label for="country">Country:</label>
+                    <input type="text" id="country" name="country">
+                </div>
+                <br>
+                <div>
+                    <label for="pincode">Pincode:</label>
+                    <input type="text" id="pincode" name="pincode">
+                </div>
+                <br>
+                <button>Submit</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

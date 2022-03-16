@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "d1d1240a-06a7-42e8-ae84-fc0fa44ef4ef",
+		"name": "Employee_Details",
+		"description": "In this collection we can view the employees we can see details of employees and we can add information about employees too.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/employees/new",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/employees/new",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"employees",
+						"new"
+					]
+				},
+				"description": "To add a new Employee"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/employees",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "firstname",
+							"value": "Rohit",
+							"type": "default"
+						},
+						{
+							"key": "lastname",
+							"value": "Kumar",
+							"type": "default"
+						},
+						{
+							"key": "mobilenumber",
+							"value": "7676654453",
+							"type": "default"
+						},
+						{
+							"key": "street",
+							"value": "valmiki road",
+							"type": "default"
+						},
+						{
+							"key": "city",
+							"value": "ujjain",
+							"type": "default"
+						},
+						{
+							"key": "state",
+							"value": "Madhya Pradesh",
+							"type": "default"
+						},
+						{
+							"key": "country",
+							"value": "India",
+							"type": "default"
+						},
+						{
+							"key": "pincode",
+							"value": "456001",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"employees"
+					]
+				},
+				"description": "Displaying new Employee details"
+			},
+			"response": []
+		}
+	]
+}
